@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CrypConvo</title>
+  </head>
+  <body>
+
+    <table class="table table-sm" style="position:absolute; top:0; bottom:0; height:100vh;">
+      <tr>
+        <td colspan="2" class="text-center pt-1 pb-1" style="height: 30px;">
+          <div style="font-size:12px;">Crypconvo v3.2</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="205px" class="p-3" style="color: #ffffff; background-color: #000000; height: 70px;">
+          <table class="table-borderless" width="100%">
+            <tr>
+              <td>
+                <img width="54" height="54" src="crypconvo_green.png">
+              </td>
+              <td class="text-left align-top">
+                <div style="font-size:14px;" id="username">USER 2972</div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="p-3" style="color: #ffffff; background-color:#3d2d47;">
+          <table width="100%" class="table-borderless">
+            <tr>
+              <td width="70px" class="text-left">
+                <img width="54" height="54" src="crypconvo_yellow.png">
+              </td>
+              <td class="text-left align-top" width="200px">
+                <div style="font-size:14px;" id="online">UNKNOWN<br /><span id="connection_status1">Offline</span></div>
+                <div class="disconnected" id="connection_status2">session disconnected.</div>
+              </td>
+              <td class="text-left">
+                <button type="button" class="btn" id="callstatus_btn">
+                  <img id="callstatus" width="54" height="54" src="crypconvo_call_grey.png">
+                </button>
+              </td>
+              <td class="text-right" width="180px">
+                <img width="54" height="54" src="crypconvo_voice_grey.png">
+                <img width="54" height="54" src="crypconvo_video_grey.png">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width="205px" style="color: #ffffff; background-color:#235975;">
+          <input class="contactsearch" type="text" placeholder="Search contacts..."><br><br>
+          <p>CONTACT LIST</p>
+          <hr style="border-top: 2px solid white;">
+        </td>
+        <td width="100%" height="100%" style="background-color: #cccccc;">
+          <div id="conversation" class="p-4" style="width: 100%; height: 85%; overflow: auto;">
+          </div>
+          <div class="text-center" style="width: 100%; height: 15%;">
+            <form id="mainform">
+              <input autocomplete="off" placeholder="Type a message..." class="border border-light p-4" type="text" id="input_text" style="height: 70px; width: 90%;"></input>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div disabled=true id="disconnectmsg"><div class="disconnectmsg2">Call Disconnected</div></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="script.js"></script> 
+  </body>
+</html>
